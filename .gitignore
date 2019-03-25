@@ -1,0 +1,22 @@
+HELP.md
+.gradle
+/build
+/bin
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+
+# IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+/gradle/
+/gradlew
+/gradlew.bat
