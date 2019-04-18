@@ -3,19 +3,28 @@ HELP.md
 /build
 /bin
 
-# Eclipse
+# --------------#
+# Eclipse		#
+# --------------#
+
 .apt_generated
 .classpath
 .factorypath
 .project
 .settings
 
-# IDEA
+# --------------#
+# IDEA			#
+# --------------#
 .idea
 *.iws
 *.iml
 *.ipr
 /out/
+
+# --------------#
+# Gradle		#
+# --------------#
 
 /gradle/
 /gradlew
