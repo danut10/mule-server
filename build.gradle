@@ -3,8 +3,8 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath 'org.liquibase:liquibase-core:3.4.1'
-		classpath "org.liquibase:liquibase-gradle-plugin:1.1.1"
+		/*classpath 'org.liquibase:liquibase-core:3.4.1'
+		classpath "org.liquibase:liquibase-gradle-plugin:1.1.1"*/
 		classpath 'mysql:mysql-connector-java:5.1.13'
 	}
 }
@@ -36,18 +36,23 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.0'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'mysql:mysql-connector-java'
+	compile 'mysql:mysql-connector-java'
 	annotationProcessor 'org.projectlombok:lombok'
 //    compile("org.liquibase:liquibase-core")
-	compile 'org.liquibase:liquibase-core:3.4.1'
-	compile "org.liquibase:liquibase-gradle-plugin:1.1.1"
-	compile 'mysql:mysql-connector-java:5.1.13'
+	/*compile 'org.liquibase:liquibase-core:3.4.1'
+	compile "org.liquibase:liquibase-gradle-plugin:1.1.1"*/
+	compile 'mysql:mysql-connector-java'
+	compile 'org.springframework.boot:spring-boot-starter-security'
+	compile 'org.springframework.security:spring-security-web'
+
+//	compile 'org.hibernate:hibernate-entitymanager:4.1.7.Final'
 }
 
-apply plugin: 'liquibase'
+//apply plugin: 'liquibase'
 
 
 
-def changeLog = "$projectDir/src/main/db/changelog.xml"
+/*def changeLog = "$projectDir/src/main/db/changelog.xml"
 task('dev')  {
 	println "executing dev"
 	liquibase {
@@ -59,5 +64,5 @@ task('dev')  {
 				password '123456'
 			}
 		}
-	}
-}
+	} 
+}*/
